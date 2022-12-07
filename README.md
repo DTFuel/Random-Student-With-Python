@@ -6,10 +6,10 @@ https://www.python.org/downloads/release/python-3810/
 以CC0协议发布  
 # 使用说明
 在release处下载最新版本的压缩包，找个合适的位置解压。点击gui.pyw即可运行。  
-如果要开机自启，请将gui.pyw的快捷方式扔到windows的启动文件夹。  
+### 如果要开机自启，请将gui.pyw的快捷方式扔到windows的启动文件夹。  
  * win7在C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup  
  * win10在使用win+r快捷键后输入shell:startup后即可打开。  
-关于权重更改：  
+### 关于权重更改：  
  * ***目前版本只能通过更改name.ini来修改。格式为："name" = "value"***  
  * 其中"name"是要抽的人的名字，"value"是其对应的权重。  
  * "value"值***只能***为一个数字，否则整个程序会停止运行（因为我忘写异常处理了）  
