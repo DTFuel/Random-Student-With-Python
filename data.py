@@ -7,7 +7,7 @@ dis = []
 
 def RepeatlessChoice(value, dislist, cell):
     item = rd.choice(value)
-    if len(cell) >= 20:
+    if len(cell) >= 15:
         del cell[0]
     if dislist.count(item) != 0:
         return item
