@@ -16,23 +16,8 @@ def defult(event):
     PanelName.geometry("1x1-100-100")
 
 
-'''主窗口'''
-Main = tk.Tk()
-Main.attributes("-alpha", 0.89)
-Main.resizable(0, 0)
-Main.title("随机抽人")
-Main.config(background="#000d0e")
-Tutorial = tk.Label(
-    Main,
-    background="#000d0e",
-    text=
-    "[使用说明]\n点击右侧悬浮球即可抽人, 点击弹出窗口即可清除。\n[名字编辑]\n编辑安装目录下name.ini文件内容, 格式已在文件中给出。\n[更新&bug反馈]\n在https://github.com/DTFuel/Random-Student-With-Python获取最新更新。\n到https://github.com/DTFuel/Random-Student-With-Python提交Issues。",
-    font=("微软雅黑", 10),
-    fg="#00ffd6",
-    anchor="nw",
-    justify="left").place(relx=0, rely=0)
 '''子窗口'''
-BallName = tk.Toplevel()
+BallName = tk.Tk()
 PanelName = tk.Toplevel()
 BallName.overrideredirect(True)
 PanelName.overrideredirect(True)
@@ -44,12 +29,9 @@ BallName.config(background="#000d0e")
 PanelName.config(background="#000d0e")
 '''主窗口大小设置'''
 MainWindowHeight, MainWindowWidth = 600, 1000
-ScreenHeight, ScreenWidth = Main.winfo_screenheight(), Main.winfo_screenwidth()
+ScreenHeight, ScreenWidth =BallName.winfo_screenheight(),BallName.winfo_screenwidth()
 MainWindowPlaceX, MainWindowPlaceY = (ScreenHeight - MainWindowHeight) / 2, (
     ScreenWidth - MainWindowWidth) / 2
-Main.geometry(
-    "%dx%d+%d+%d" %
-    (MainWindowWidth, MainWindowHeight, MainWindowPlaceY, MainWindowPlaceX))
 '''子窗口大小设置'''
 BallHeight, BallWeight = 50, 30
 BallPlaceX, BallPlaceY = ScreenWidth - BallWeight, (ScreenHeight -
@@ -78,4 +60,4 @@ mark = tk.StringVar()
 PanelName.bind("<Button-1>", defult)
 BallName.bind("<Button-1>", choose)
 '''开始主循环'''
-Main.mainloop()
+BallName.mainloop()
