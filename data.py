@@ -1,4 +1,4 @@
-import random as rd
+import secrets as rd
 from cfg import name  #调用cfg.py中name变量
 
 value = []
