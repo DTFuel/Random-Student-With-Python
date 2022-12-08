@@ -3,6 +3,9 @@
 基于python开发，需要python3.8.10的运行环境。  
 python3.8.10下载地址：  
 https://www.python.org/downloads/release/python-3810/  
+python3.8安装教程：  
+https://zhuanlan.zhihu.com/p/390819620  
+安装时***一定***要勾选*add python3.8 to path*  
 以CC0协议发布  
 # 使用说明
 在release处下载最新版本的压缩包，找个合适的位置解压。点击gui.pyw即可运行。  
